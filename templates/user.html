@@ -8,7 +8,7 @@
 <body>
 
 	<header>
-		<section><img src="{{url_for('static', filename='img/icon.png')}}"></section>
+		<section><a href='/'><img src="{{url_for('static', filename='img/icon.png')}}"></a></section>
 	</header>
 
 	<main>
@@ -17,7 +17,7 @@
 		<h3>Here is your account information:</h3>
 		<span class='label'>Name:</span><span class='response'>{{name}}</span>
 		<span class='label'>Email:</span><span class='response'>{{email}}</span>
-		<span class='label'>Number:</span><span class='response'>{{num}}</span>
+		<span class='label'>Number:</span><span class='response'>{{tel}}</span>
 	</section>
 	</main>
 	<footer>	

@@ -7,17 +7,17 @@
 
 <body>
 	<header>
-		<section><img src="{{url_for('static', filename='img/icon.png')}}"></section>
+		<section><a href='/'><img src="{{url_for('static', filename='img/icon.png')}}"></a></section>
 	</header>
 	<main>
 		<section>
 			<h1>Welcome to Flitter.</h1>
 
 			<h3>Create a new account</h3>
-			<form action='/users' method='POST'>
+			<form action='/users' method='post'>
 				<label for='name'>Name:</label><input type="text" name='name'>
-				<label for='email'>Email:</label><input type="text" name='email'>
-				<label for='num'>Number:</label><input type="number" name='num'>
+				<label for='email'>Email:</label><input type="email" name='email'>
+				<label for='tel'>Number:</label><input type="tel" name='tel'>
 
 				<input type="submit" value="Create my account">
 			</form>
