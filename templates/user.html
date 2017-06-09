@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Page</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+	
+</head>
+<body>
+
+	<header>
+		<section><img src="{{url_for('static', filename='img/icon.png')}}"></section>
+	</header>
+
+	<main>
+	<section>
+		<h1>Thanks for signing up!</h1>
+		<h3>Here is your account information:</h3>
+		<span class='label'>Name:</span><span class='response'>{{name}}</span>
+		<span class='label'>Email:</span><span class='response'>{{email}}</span>
+		<span class='label'>Number:</span><span class='response'>{{num}}</span>
+	</section>
+	</main>
+	<footer>	
+		<p>Form based on <a href="http://sendible.com/insights/wp-content/uploads/2013/03/1.png">this image</a>.</p>
+	</footer>
+</body>
+</html>

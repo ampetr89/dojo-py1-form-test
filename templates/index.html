@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form test Index Page</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+	<header>
+		<section><img src="{{url_for('static', filename='img/icon.png')}}"></section>
+	</header>
+	<main>
+		<section>
+			<h1>Welcome to Flitter.</h1>
+
+			<h3>Create a new account</h3>
+			<form action='/users' method='POST'>
+				<label for='name'>Name:</label><input type="text" name='name'>
+				<label for='email'>Email:</label><input type="text" name='email'>
+				<label for='num'>Number:</label><input type="number" name='num'>
+
+				<input type="submit" value="Create my account">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Form based on <a href="http://sendible.com/insights/wp-content/uploads/2013/03/1.png">this image</a>.</p>
+	</footer>
+</body>
+	
+</html>
